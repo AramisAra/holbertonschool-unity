@@ -1931,7 +1931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246816277}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.005102572, z: -0, w: 0.99998707}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1965,7 +1965,7 @@ Transform:
   - {fileID: 2053976281}
   - {fileID: 283672730}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -3239.415, z: 0}
 --- !u!1 &1435995024
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,10 +2072,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1593485388}
-  distanceFromTarget: 5
-  heightOffset: 2
+  distanceFromTarget: 6.5
+  heightOffset: 3.5
   smoothTime: 0.5
-  rotationSmoothTime: 0.1
+  rotationSmoothTime: 0
+  mouseSensitivity: 100
+  maxVerticalAngle: 80
 --- !u!1 &1463896507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,9 +2307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpPower: 20
-  isOnGround: 1
   rotationSpeed: 1
-  cameraController: {fileID: 1435995028}
+  isOnGround: 1
 --- !u!143 &1593485384
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2688,14 +2689,14 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 1
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.7
   m_Height: 6
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1814856442
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3405,7 +3406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3365559678175887452, guid: 9bc56c01645aa5ab7924cb3bdc7b7535, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.274
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 3365559678175887452, guid: 9bc56c01645aa5ab7924cb3bdc7b7535, type: 3}
       propertyPath: m_LocalPosition.z
